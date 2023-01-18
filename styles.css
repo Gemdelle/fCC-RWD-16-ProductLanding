@@ -59,7 +59,7 @@ nav {
 .page-container {
     width: 99vw;
     height: auto;
-    /* top: 1vw; */ /* Si se activa esto da margen arriba pero saca el de abajo */
+    top: 1vw; /* Si se activa esto da margen arriba pero saca el de abajo */
     bottom: 15vw;
     position: relative;
 }
@@ -97,7 +97,7 @@ nav {
 }
 
 #header {
-    width: 50%;
+    width: 40%;
     height: 6vw;
     background-color: #BDC3A9;
     position: fixed;
@@ -113,8 +113,20 @@ nav {
 }
 
 #nav-bar {
-    width: 70%;
+    width: 100%;
     height: 3vw;
+}
+
+.butterfly-giph {
+    position: absolute;
+    background-image: url(Giphs/Butterfly-giph.gif);
+    background-size: contain;
+    background-position: center;
+    height: 6vw;
+    width: 6vw;
+    transform: scaleX(-1) rotate(-50deg);
+    left: 37.5vw;
+    filter: contrast(200%) brightness(50%);
 }
 
 header {
@@ -123,17 +135,17 @@ header {
 }
 
 nav ul {
-    width: 90%;
+    width: 85%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     color: rgb(73, 1, 1);
     transition: all 500ms ease-in-out;
     letter-spacing: 0.1vw;
@@ -146,7 +158,7 @@ nav ul li a:hover {
 
 left-side {
     width: 5vw;
-    height: 225vw;
+    height: 250vw;
     position: absolute;
     left: 0;
     background-image: url(Images/Background-left.png);
@@ -156,7 +168,7 @@ left-side {
 
 right-side {
     width: 5vw;
-    height: 225vw;
+    height: 250vw;
     position: absolute;
     top: 0;
     right: 0;
@@ -223,7 +235,7 @@ h2 {
     filter: saturate(1000%) brightness(40%);
     text-align: center;
     font-style: italic;
-    font-size: small;
+    font-size: 0.8vw;
     font-weight: normal;
     text-shadow: 0px 0px 20px white;
     color: rgb(59, 59, 59);
@@ -231,8 +243,10 @@ h2 {
 
 #email {
     font-style: italic;
-    margin-top: 0.5vw;
     margin-bottom: 1vw;
+    font-family: 'Old Standard TT', serif;
+    text-indent: 0.2vw;
+    border: 3px ridge rgb(119, 12, 12);
 }
 
 .submit-background {
@@ -249,6 +263,8 @@ h2 {
     margin-top: 1vw;
     background-color: transparent;
     border: none;
+    font-family: 'Great Vibes', cursive;
+    font-size: 0.9vw;
 }
 
 .creature-container,
@@ -381,6 +397,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     transition: all 500ms ease-in-out;
+    cursor: pointer;
 }
 
 .stage-01 {
@@ -438,6 +455,10 @@ h2 {
     text-shadow: 0px 5px 10px black;
 }
 
+.characteristic-description p {
+    font-weight: 600;
+}
+
 .characteristics {
     height: 15vw;
     width: 90%;
@@ -461,7 +482,7 @@ i {
 /* Species START */
 
 .species-container {
-    width: 80%;
+    width: 90%;
 }
 
 .stages-container {
@@ -469,19 +490,20 @@ i {
 }
 
 .species {
-    width: 27%;
+    width: 28%;
     text-align: center;
 }
 
 .species h4 {
     margin: 0.5vw 0;
+    margin-bottom: 2.5vw ;
 }
 
 .card {
-    height: 10vw;
-    width: 90%;
+    height: 8vw;
+    width: 100%;
     margin-bottom: 1vw;
-    padding: 1vw;
+    padding: 0.5vw;
     background-color: rgba(244, 244, 231, 80%);
     border-radius: 12px;
     border: 3px ridge beige;
@@ -489,6 +511,7 @@ i {
     box-shadow: 0px 10px 15px gray;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .card ul li::before {
@@ -509,19 +532,47 @@ i {
 .card ul li {
     list-style-type: none;
     margin: 0.2vw 0;
+    font-size: 0.9vw;
 }
 
 .card ul li span {
     font-style: italic;
 }
 
-.colours {
-    display: inline-flex;
-    align-items: flex-end;
+.price {
+    height: 1.5vw;
+    width: 6vw;
+    position: absolute;
+    bottom: 9vw;
+    left: 7.8vw;
+    padding-top: 4px;
+    z-index: -1;
+    font-style: italic;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(55, 0, 0);
+    border: 3px ridge rgb(134, 102, 102);
+    box-shadow: 0px 0px 10px white;
 }
 
-.colour {
-    margin: 0 0.2vw;
+.buy {
+    margin-top: 2vw;
+    height: 3vw;
+    width: 8vw;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(88, 55, 55);
+    border: 3px ridge rgb(134, 102, 102);
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.25vw;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.buy:hover {
+    scale: 110%;
+    box-shadow: 0px 0px 10px white;
+    background-color: rgb(55, 0, 0);
 }
 
 .butterfly-emoji {
@@ -534,56 +585,47 @@ i {
     vertical-align: middle;
 }
 
-.white,
-.blue,
-.red,
-.gold,
-.black,
-.orange {
-    width: 0.7vw;
-    height: 0.7vw;
-    border-radius: 50% 20%;
-    border: 1px solid rgb(153, 153, 153);
-    margin: 0px 2px;
-}
-
-.white {
-    background: linear-gradient(-45deg, black 10%, white 35%,white 65%, black 100%);
-}
-
-.blue {
-    background: linear-gradient(-45deg, black 10%, rgb(4, 4, 159) 35%,rgb(4, 4, 159) 65%, black 100%);
-}
-
-.gold {
-    background: linear-gradient(-45deg, black 10%, rgb(171, 147, 9) 35%,rgb(171, 147, 9) 65%, black 100%);
-}
-
-.black {
-    background: linear-gradient(-45deg, black 10%, rgb(35, 35, 35) 35%,rgb(35, 35, 35) 65%, black 100%);
-}
-
-.orange {
-    background: linear-gradient(-45deg, black 10%, orange 35%,orange  65%, black 100%);
-}
-
 .flower-image {
     width: 5vw;
-    height: 5vw;
+    height: 6vw;
     background-color: blue;
     position: absolute;
-    left: 19.5vw;
-    bottom: 3.5vw;
+    left: 17vw;
+    top: 4vw;
     border-radius: 50%;
+    border: 5px ridge rgb(186, 186, 166);
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: all 500ms ease-in-out;
+    box-shadow: 0px 8px 20px rgb(128, 128, 128);
+    background-size: cover;
+    background-position: center;
+}
+
+.flower-image:hover {
+    scale: 110%;
+    filter: grayscale(30%);
+}
+
+.flower-01 {
+    background-image: url(Images/Flower-01.jpg);
+}
+
+.flower-02 {
+    background-image: url(Images/Flower-02.jpg);
+}
+
+.flower-03 {
+    background-image: url(Images/Flower-03.jpg);
 }
 
 .video {
-    width: 80%;
+    width: 100%;
     height: 12vw;
     background-color: black;
     color: white;
     justify-content: center;
-    margin: 1vw 0;
+    margin: 2vw 0;
 }
 
 .step {
