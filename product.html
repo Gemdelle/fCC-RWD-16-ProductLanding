@@ -9,95 +9,230 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alice&family=Berkshire+Swash&family=Cinzel&family=Delius&family=EB+Garamond&family=Fredericka+the+Great&family=Great+Vibes&family=Gugi&family=Henny+Penny&family=Homemade+Apple&family=IBM+Plex+Serif&family=IM+Fell+English+SC&family=Julius+Sans+One&family=La+Belle+Aurore&family=Lemonada&family=Macondo&family=Old+Standard+TT:ital@0;1&family=Pinyon+Script&family=Rubik+Marker+Hatch&family=Rubik+Microbe&family=Satisfy&family=Tangerine&family=Titillium+Web&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <header id="header">
-        <img id="header-img" src="" alt="logo"> <!-- Logo -->
-        <nav id="nav-bar">
-            <ul>
-                <li class="nav-link"><a href="#"></a></li>
-                <li class="nav-link"><a href="#"></a></li>
-                <li class="nav-link"><a href="#"></a></li>
-            </ul>
-        </nav>
-    </header>
+    <left-side> </left-side>
+    <div class="page-container">
+        <header id="header" class="flex">
+            <img id="header-img" src="Images/Logo.png" alt="logo">
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-link"><a href="#form">Form</a></li>
+                    <li class="nav-link"><a href="#evolution">Evolution</a></li>
+                    <li class="nav-link"><a href="#characteristics">Characteristics</a></li>
+                    <li class="nav-link"><a href="#species">Species</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="web-container">
+            <div class="form">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" class="flex-column">
+                    <p>Welcome to <span>ButterPedya</span>, the best place to acquire your first egg! Learn the most
+                        important things
+                        about the butterfly evolution cycle and the main characteristics about each species before
+                        buying. <br />
+                        <span>🦋 Thank you for your visit 🦋</span>
+                    </p>
+                    <span>Enter your email to stay updated</span>
+                    <input id="email" type="email" placeholder="email">
+                    <div class="submit-background flex-row">
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
 
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <span>Email: </span><input id="email" type="email" placeholder="email">
-        <input id="submit" type="submit" value="Submit">
-    </form>
+            <div id="evolution" class="creature-container">
+                <h2>Evolution Cycle</h2>
+                <div class="diagram">
+                    <div class="stage top">
+                        <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg, and then proceeds to finish up the rest of the egg shell.</span>
+                        <div class="stage-01"></div>
+                    </div>
 
-    <div id="creatures" class="creature-container">
-        <h2>Animal characteristics</h2>
-        <div class="diagram"></div>
-        <p class="creature-description">Animal and diagram description.</p>
+                    <div class="stage middle">
+                        <div class="stage-02-container">
+                            <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg, and then proceeds to finish up the rest of the egg shell.</span>
+                            <div class="stage-02"></div>
+                        </div>
+                        <div class="stage-03-container">
+                            <div class="stage-03"></div>
+                            <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg, and then proceeds to finish up the rest of the egg shell.</span>
+                        </div>
+                    </div>
+
+                    <div class="stage bottom">
+                        <div class="stage-04"></div>
+                        <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg, and then proceeds to finish up the rest of the egg shell.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="characteristics" class="characteristics-container">
+                <h2>Characteristics</h2>
+                <div class="flex margin">
+                    <div class="characteristic-icons flex-column-original">
+                        <i class="fa-solid fa-dna"></i>
+                        <i class="fa-solid fa-gem"></i>
+                        <i class="fa-brands fa-connectdevelop"></i>
+                    </div>
+                    <div class="characteristics flex-column-original">
+                        <div class="characteristic-description flex-column-original">
+                            <h4>Unique Specimens</h4>
+                            <p>Characteristic description.</p>
+                        </div>
+
+                        <div class="characteristic-description flex-column-original">
+                            <h4>Best Care</h4>
+                            <p>Characteristic description.</p>
+                        </div>
+
+                        <div class="characteristic-description flex-column-original">
+                            <h4>Fast Shipping</h4>
+                            <p>Characteristic description.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="species" class="species-container">
+                <h2>Species</h2>
+                <div class="stages-container flex">
+                    <!-- Species 01 -->
+                    <div class="species flex-column">
+                        <h4>Chilasa clytia clytia</h4>
+                        <div class="card">
+                            <ul>
+                                <li><span>Common Name: </span>Common Mime</li>
+                                <li><span>Genus: </span>Chilasa</li>
+                                <li><span>Pattern: </span>Stripes</li>
+                                <li><span>Wingspan: </span>80 - 90 mm.</li>
+                                <li><span>Colour: </span>
+                                    <div class="colours flex">
+                                        <div class="white"></div>
+                                        <div class="blue"></div>
+                                        <div class="orange"></div>
+                                    </div>
+                                </li>
+                                <li><span>Flower: </span>Cinnamomum iners</li>
+                            </ul>
+                        </div>
+                        <div class="video flex">Video</div>
+                        <div class="step"></div>
+                        <div class="butterfly">
+                            <div class="butterfly-01"></div>
+                            <p>The butterfly mimics the Danainae species for protection against predators.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="pupa">
+                            <div class="pupa-01"></div>
+                            <p>After 11-12 days, the pupa turns black as the development within the pupal case draws to a close.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="caterpillar">
+                            <div class="caterpillar-01"></div>
+                            <p>The 5th instar lasts for 4 days, and the body length reaches up to 55mm. Toward the end of this instar, the body gradually shortens in length.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="egg">
+                            <div class="egg-01"></div>
+                            <p>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg, and then proceeds to finish up the rest of the egg shell.</p>
+                        </div>
+                    </div>
+                    <!-- Species 02 -->
+                    <div class="species flex-column">
+                        <h4>Leptosia nina malayana</h4>
+                        <div class="card">
+                            <ul>
+                                <li><span>Common Name: </span>Psyche</li>
+                                <li><span>Genus: </span>Leptosia</li>
+                                <li><span>Pattern: </span>Stripes</li>
+                                <li><span>Wingspan: </span>36 - 46 mm.</li>
+                                <li><span>Colour: </span>
+                                    <div class="colours flex">
+                                        <div class="white"></div>
+                                        <div class="gold"></div>
+                                    </div>
+                                </li>
+                                <li><span>Flower: </span>Cleome rutidosperma</li>
+                            </ul>
+                        </div>
+                        <div class="video flex">Video</div>
+                        <div class="step"></div>
+                        <div class="butterfly">
+                            <div class="butterfly-02"></div>
+                            <p>The adults are small and have rounded white wings. Above, the wings are entirely white except for a black apical border and a black subapical spot on the forewing.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="pupa">
+                            <div class="pupa-02"></div>
+                            <p>After about 4.5-5 days of development, the pupal skin turns translucent as the development within the pupal case comes to an end.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="caterpillar">
+                            <div class="caterpillar-02"></div>
+                            <p>The 5th instar lasts for 2.5-3.0 days, and the body length reaches up to 20-21mm. On the last day of the 5th instar, the body of the caterpillar shortens and changes to a bright green shade.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="egg">
+                            <div class="egg-02"></div>
+                            <p>The egg takes about 2.5-3 days to hatch. The newly hatched eats the empty egg shell for its first meal, and then moves on to eat the leaf lamina.</p>
+                        </div>
+                    </div>
+                    <!-- Species 03 -->
+                    <div class="species flex-column">
+                        <h4>Cethosia cyane</h4>
+                        <div class="card">
+                            <ul>
+                                <li><span>Common Name: </span>Leopard Lacewing</li>
+                                <li><span>Genus: </span>Cethosia</li>
+                                <li><span>Pattern: </span>Spots</li>
+                                <li><span>Wingspan: </span>75 - 80 mm.</li>
+                                <li><span>Colour: </span>
+                                    <div class="colours flex">
+                                        <div class="white"></div>
+                                        <div class="black"></div>
+                                        <div class="orange"></div>
+                                    </div>
+                                </li>
+                                <li><span>Flower: </span>Passiflora foetida</li>
+                            </ul>
+                        </div>
+                        <div class="video flex">Video</div>
+                        <div class="step"></div>
+                        <div class="butterfly">
+                            <div class="butterfly-03"></div>
+                            <p>Above, the male is orange with apical two-thirds of the forewing black with a white and oblique band lying within. The female is mostly similar but with the orange background replaced with a  pale yellowish to whitish coloration.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="pupa">
+                            <div class="pupa-03"></div>
+                            <p>After about 6 days of development, the mature pupa are darkened, especially in the wing spad.</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="caterpillar">
+                            <div class="caterpillar-03"></div>
+                            <p>The 5th instar lasts 4-5 days and the body length reaching up to 39mm</p>
+                        </div>
+                        <div class="step"></div>
+                        <div class="egg">
+                            <div class="egg-03"></div>
+                            <p>Each egg takes about 5-6 days to hatch. The infant caterpillar nibbles away a small portion of the egg shell and pushes its way through the crack.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
-
-    <div id="characteristics" class="characteristics-container">
-        <div class="characteristic">
-            <div class="characteristic-image"></div>
-            <div class="characteristic-description">
-                <h4>Characteristic name</h4>
-                <p>Characteristic description.</p>
-            </div>
-        </div>
-        <div class="characteristic">
-            <div class="characteristic-image"></div>
-            <div class="characteristic-description">
-                <h4>Characteristic name</h4>
-                <p>Characteristic description.</p>
-            </div>
-        </div>
-        <div class="characteristic">
-            <div class="characteristic-image"></div>
-            <div class="characteristic-description">
-                <h4>Characteristic name</h4>
-                <p>Characteristic description.</p>
-            </div>
-        </div>
     </div>
-
-    <div id="species" class="species-container">
-        <h3>Species</h3>
-        <div class="stages-container">
-            <!-- Species 01 -->
-            <div class="species">
-                <h4>Species Name</h4>
-                <div>VIDEO of stages</div>
-                <div class="butterfly-01">Image of Butterfly (silhouette, hover reveals image)</div>
-                <div class="step">VERTICAL LINE</div>
-                <div class="caterpillar-01">Image of Butterfly (silhouette, hover reveals image)</div>
-                <div class="step">VERTICAL LINE</div>
-                <div class="egg-01">Image of Egg</div>
-            </div>
-            <!-- Species 02 -->
-            <div class="species">
-                <h4>Species Name</h4>
-                <div>VIDEO of stages</div>
-                <div class="butterfly-02">Image of Butterfly (silhouette, hover reveals image)</div>
-                <div class="step">VERTICAL LINE</div>
-                <div class="caterpillar-02">Image of Butterfly (silhouette, hover reveals image)</div>
-                <div class="step">VERTICAL LINE</div>
-                <div class="egg-02">Image of Egg</div>
-            </div>
-            <!-- Species 03 -->
-            <div class="species">
-                <h4>Species Name</h4>
-                <div>VIDEO of stages</div>
-                <div class="butterfly-03">Image of Butterfly (silhouette, hover reveals image)</div>
-                <div class="step">VERTICAL LINE</div>
-                <div class="caterpillar-03">Image of Butterfly (silhouette, hover reveals image)</div>
-                <div class="step">VERTICAL LINE</div>
-                <div class="egg-03">Image of Egg</div>
-            </div>
-        </div>
-    </div>
-<!-- You can watch an embedded product video with id="video" -->
-
+    <right-side> </right-side>
+    <bottom-side></bottom-side>
 </body>
-
 </html>

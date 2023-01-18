@@ -1,32 +1,715 @@
-/* font-family: 'Abyssinica SIL', serif;
-font-family: 'Alice', serif;
-font-family: 'Berkshire Swash', cursive;
-font-family: 'Cinzel', serif;
-font-family: 'Delius', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Great Vibes', cursive;
-font-family: 'Gugi', cursive;
-font-family: 'Henny Penny', cursive;
-font-family: 'Homemade Apple', cursive;
-font-family: 'IBM Plex Serif', serif;
-font-family: 'IM Fell English SC', serif;
-font-family: 'Julius Sans One', sans-serif;
-font-family: 'La Belle Aurore', cursive;
-font-family: 'Lemonada', cursive;
-font-family: 'Macondo', cursive;
-font-family: 'Old Standard TT', serif;
-font-family: 'Pinyon Script', cursive;
-font-family: 'Rubik Marker Hatch', cursive;
-font-family: 'Rubik Microbe', cursive;
-font-family: 'Satisfy', cursive;
-font-family: 'Tangerine', cursive;
-font-family: 'Titillium Web', sans-serif; */
+/* 
+
+
+ */
+
+/* @media screen (
+
+) */
 
 * {
     margin: 0;
 }
 
-/* @media screen (
+html {
+    scroll-behavior: smooth;
+}
 
-) */
+body {
+    background: linear-gradient(90deg, rgb(73, 79, 68)10%, rgb(238, 245, 220) 50%, rgb(73, 79, 68) 100%);
+    height: auto;
+    position: relative;
+    font-family: 'Old Standard TT', serif;
+}
+
+h2 {
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    color: rgb(31, 1, 1);
+}
+
+#evolution span,
+.species p,
+h4, 
+nav {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.25vw;
+}
+
+#characteristics h4 {
+    font-size: 1.5vw;
+    letter-spacing: 0.2vw;
+    font-weight: lighter;
+}
+
+.card {
+    letter-spacing: 1px;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+.species h4 {
+    text-transform: uppercase;
+    font-family: 'Old Standard TT', serif;
+    font-size: 0.9vw;
+}
+
+.page-container {
+    width: 99vw;
+    height: auto;
+    /* top: 1vw; */ /* Si se activa esto da margen arriba pero saca el de abajo */
+    bottom: 15vw;
+    position: relative;
+}
+
+.web-container {
+    width: 80%;
+    height: auto;
+    margin: 8vw auto;
+    margin-bottom: 0;
+    /* background-color: gray; */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-original {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header {
+    width: 50%;
+    height: 6vw;
+    background-color: #BDC3A9;
+    position: fixed;
+    border: 3px double #a3a893;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 5px 20px black;
+}
+
+#header-img {
+    width: 10vw;
+    height: 5.5vw;
+}
+
+#nav-bar {
+    width: 70%;
+    height: 3vw;
+}
+
+header {
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: rgb(73, 1, 1);
+    transition: all 500ms ease-in-out;
+    letter-spacing: 0.1vw;
+}
+
+nav ul li a:hover {
+    text-shadow: 0px 5px 5px rgb(255, 255, 255);
+    font-size: 1.7vw;
+}
+
+left-side {
+    width: 5vw;
+    height: 225vw;
+    position: absolute;
+    left: 0;
+    background-image: url(Images/Background-left.png);
+    background-size: contain;
+    z-index: -1;
+}
+
+right-side {
+    width: 5vw;
+    height: 225vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(Images/Background-right.png);
+    background-size: contain;
+    z-index: -1;
+}
+
+bottom-side {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 99.2vw;
+    height: 20vw;
+    background-image: url(Images/Background-bottom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-shadow: 0px 5px 10px black;
+    margin-top: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+.form {
+    width: 100%;
+    height: 24vw;
+    background-image: url(Images/Form-background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#form {
+    background-color: rgb(117, 118, 105);
+    width: 30%;
+    padding: 1vw;
+    margin: 0 auto;
+    border: 0.3vw double white;
+    border-radius: 10vw;
+    box-shadow: 0px 10px 25px black;
+}
+
+#form span:first-of-type {
+    margin-bottom: 0.8vw;
+}
+
+#form p {
+    padding: 2vw 3vw;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9vw;
+    text-shadow: 0px 0px 20px white;
+}
+
+#form p span {
+    font-weight: bold;
+    color: rgb(40, 9, 9);
+}
+
+#form p span:nth-of-type(2) {
+    filter: saturate(1000%) brightness(40%);
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    font-weight: normal;
+    text-shadow: 0px 0px 20px white;
+    color: rgb(59, 59, 59);
+}
+
+#email {
+    font-style: italic;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.submit-background {
+    height: 6vw;
+    width: 10vw;
+    background-image: url(Images/Submit-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#submit {
+    cursor: pointer;
+    color: white;
+    margin-top: 1vw;
+    background-color: transparent;
+    border: none;
+}
+
+.creature-container,
+.characteristics-container,
+.species-container {
+    height: auto;
+    width: 60%;
+    /* background-color: white; */
+    margin: 2vw auto;
+}
+
+.creature-container {
+    width: 90%;
+}
+
+.stages-container {
+    width: 100%;
+}
+
+.diagram {
+    background-image: url(Images/Evolution-background.png);
+    height: 40vw;
+    width: 47vw;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stage {
+    height: 21.5vw;
+    width: 48vw;
+}
+
+.stage span {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-02-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 19vw;
+    position: relative;
+}
+
+.stage-02-container span{
+    height: 19vw;
+    width: 8vw;
+    align-items: center;
+    position: absolute;
+    left: 1vw;
+    text-align: center;
+}
+
+.stage-03-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 17vw;
+    position: relative;
+}
+
+.stage-03-container span{
+    height: 10vw;
+    width: 7.5vw;
+    align-items: center;
+    position: absolute;
+    right: 1vw;
+    text-align: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 23vw;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 17vw;
+}
+
+.top span {
+    align-items: flex-start;
+    height: 4.5vw;
+    text-align: center;
+    width: 20vw;
+}
+
+.bottom span {
+    align-items: flex-end;
+    height: 6vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    width: 22vw;
+}
+
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 17vw;
+    position: absolute;
+}
+
+.stage-01,
+.stage-02,
+.stage-03,
+.stage-04 {
+    height: 16vw;
+    width: 7vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+
+.stage-01 {
+    background-image: url(Images/Stage-01.png);
+    height: 10vw;
+}
+
+.stage-02 {
+    background-image: url(Images/Stage-04.png);
+    width: 8vw;
+}
+
+.stage-03 {
+    background-image: url(Images/Stage-02.png);
+    width: 7vw;
+}
+
+.stage-04 {
+    background-image: url(Images/Stage-03.png);
+    height: 8vw;
+}
+
+.stage-01:hover,
+.stage-02:hover,
+.stage-03:hover,
+.stage-04:hover {
+    scale: 120%;
+}
+
+.margin {
+    margin-top: 1vw;
+}
+
+.characteristic-icons {
+    height: 15vw;
+    width: 6%;
+    justify-content: space-around;
+}
+
+.characteristics-container {
+    width: 90%;
+}
+
+.characteristic-description {
+    background-color: rgba(130, 30, 30, 0.3);
+    height: 4vw;
+    padding-left: 1vw;
+    border-radius: 6px;
+    border: 4px ridge rgb(95, 4, 4);
+    color: rgb(33, 0, 0);
+}
+
+.characteristic-description h4 {
+    color: white;
+    text-shadow: 0px 5px 10px black;
+}
+
+.characteristics {
+    height: 15vw;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.characteristics h4 {
+    font-size: 1vw;
+    font-style: italic;
+    margin-bottom: 0.3vw;
+}
+
+i {
+    width: 2vw;
+    height: 2vw;
+    font-size: 2.5vw;
+    text-shadow: 0px 0px 10px white;
+    color: rgb(59, 52, 52);
+}
+
+/* Species START */
+
+.species-container {
+    width: 80%;
+}
+
+.stages-container {
+    justify-content: space-between;
+}
+
+.species {
+    width: 27%;
+    text-align: center;
+}
+
+.species h4 {
+    margin: 0.5vw 0;
+}
+
+.card {
+    height: 10vw;
+    width: 90%;
+    margin-bottom: 1vw;
+    padding: 1vw;
+    background-color: rgba(244, 244, 231, 80%);
+    border-radius: 12px;
+    border: 3px ridge beige;
+    text-align: start;
+    box-shadow: 0px 10px 15px gray;
+    display: flex;
+    align-items: center;
+}
+
+.card ul li::before {
+    content: '🦋  ';
+    filter: brightness(20%);
+    margin-left: -2vw;
+    height: 17px;
+}
+
+.card ul .li-colour::before {
+    content: '';
+}
+
+.card ul .li-colour {
+    align-items: flex-end;
+}
+
+.card ul li {
+    list-style-type: none;
+    margin: 0.2vw 0;
+}
+
+.card ul li span {
+    font-style: italic;
+}
+
+.colours {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.colour {
+    margin: 0 0.2vw;
+}
+
+.butterfly-emoji {
+    filter: brightness(0);
+}
+
+.li-colour::before {
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.white,
+.blue,
+.red,
+.gold,
+.black,
+.orange {
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 50% 20%;
+    border: 1px solid rgb(153, 153, 153);
+    margin: 0px 2px;
+}
+
+.white {
+    background: linear-gradient(-45deg, black 10%, white 35%,white 65%, black 100%);
+}
+
+.blue {
+    background: linear-gradient(-45deg, black 10%, rgb(4, 4, 159) 35%,rgb(4, 4, 159) 65%, black 100%);
+}
+
+.gold {
+    background: linear-gradient(-45deg, black 10%, rgb(171, 147, 9) 35%,rgb(171, 147, 9) 65%, black 100%);
+}
+
+.black {
+    background: linear-gradient(-45deg, black 10%, rgb(35, 35, 35) 35%,rgb(35, 35, 35) 65%, black 100%);
+}
+
+.orange {
+    background: linear-gradient(-45deg, black 10%, orange 35%,orange  65%, black 100%);
+}
+
+.flower-image {
+    width: 5vw;
+    height: 5vw;
+    background-color: blue;
+    position: absolute;
+    left: 19.5vw;
+    bottom: 3.5vw;
+    border-radius: 50%;
+}
+
+.video {
+    width: 80%;
+    height: 12vw;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    margin: 1vw 0;
+}
+
+.step {
+    background-image: url(Images/Line.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 9vw;
+}
+
+.butterfly,
+.pupa,
+.caterpillar,
+.egg {
+    width: 100%;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vw;
+}
+
+.egg {
+    height: 12vw;
+}
+
+.butterfly-01,
+.butterfly-02,
+.butterfly-03,
+.pupa-01,
+.pupa-02,
+.pupa-03,
+.caterpillar-01,
+.caterpillar-02,
+.caterpillar-03,
+.egg-01,
+.egg-02,
+.egg-03 {
+    width: 100%;
+    height: 12vw;
+    margin-bottom: 2vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0);
+    transition: all 500ms ease-in-out;
+}
+
+.butterfly-01:hover,
+.butterfly-02:hover,
+.butterfly-03:hover,
+.pupa-01:hover,
+.pupa-02:hover,
+.pupa-03:hover,
+.caterpillar-01:hover,
+.caterpillar-02:hover,
+.caterpillar-03:hover,
+.egg-01:hover,
+.egg-02:hover,
+.egg-03:hover {
+    filter: brightness(100%);
+    scale: 110%;
+}
+
+.egg-01,
+.egg-02,
+.egg-03 {
+    width: 60%;
+    height: 5vw;
+}
+
+.butterfly {
+    height: 23vw;
+}
+
+.caterpillar {
+    height: 23vw;
+}
+
+.butterfly-01 {
+    background-image: url(Images/Butterfly-01.png);
+}
+
+.butterfly-02 {
+    background-image: url(Images/Butterfly-02.png);
+}
+
+.butterfly-03 {
+    background-image: url(Images/Butterfly-03.png);
+}
+
+.pupa-01 {
+    background-image: url(Images/Pupa-01.png);
+}
+
+.pupa-02 {
+    background-image: url(Images/Pupa-02.png);
+}
+
+.pupa-03 {
+    background-image: url(Images/Pupa-03.png);
+}
+
+.caterpillar-01 {
+    background-image: url(Images/Caterpillar-01.png);
+}
+
+.caterpillar-02 {
+    background-image: url(Images/Caterpillar-02.png);
+}
+
+.caterpillar-03 {
+    background-image: url(Images/Caterpillar-03.png);
+}
+
+.egg-01 {
+    background-image: url(Images/Egg-01.png);
+}
+
+.egg-02 {
+    background-image: url(Images/Egg-02.png);
+}
+
+.egg-03 {
+    background-image: url(Images/Egg-03.png);
+}
+
+/* Species END */
