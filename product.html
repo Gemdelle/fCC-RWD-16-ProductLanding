@@ -22,19 +22,19 @@
     <div class="page-container">
         <header id="header" class="flex">
             <div class="butterfly-giph"></div>
-            <img id="header-img" src="Images/Logo.png" alt="logo">
+            <img id="header-img" src="https://www.linkpicture.com/q/Logo_89.png" alt="logo">
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a href="#form">Form</a></li>
-                    <li class="nav-link"><a href="#evolution">Evolution</a></li>
-                    <li class="nav-link"><a href="#characteristics">Characteristics</a></li>
-                    <li class="nav-link"><a href="#species">Species</a></li>
+                    <li><a href="#form" class="nav-link">Form</a></li>
+                    <li><a href="#evolution" class="nav-link">Evolution</a></li>
+                    <li><a href="#characteristics" class="nav-link">Characteristics</a></li>
+                    <li><a href="#species" class="nav-link">Species</a></li>
                 </ul>
             </nav>
         </header>
         <div class="web-container">
             <div class="form">
-                <form id="form" action="https://www.freecodecamp.com/email-submit" class="flex-column">
+                <form id="form" target="_blank" action="https://www.freecodecamp.com/email-submit" class="flex-column">
                     <p>Welcome to <span>ButterPedya</span>, the best place to acquire your first egg! Learn the most
                         important things
                         about the butterfly evolution cycle and the main characteristics about each species before
@@ -42,7 +42,7 @@
                         <span>🦋 Thank you for your visit 🦋</span>
                     </p>
                     <span>Enter your email to stay updated</span>
-                    <input id="email" type="email" placeholder="email">
+                    <input id="email" name="email" type="email" placeholder="email">
                     <div class="submit-background flex-row">
                         <input id="submit" type="submit" value="Submit">
                     </div>
@@ -53,27 +53,31 @@
                 <h2>Evolution Cycle</h2>
                 <div class="diagram">
                     <div class="stage top">
-                        <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg,
+                        <span class="stage-description">The egg takes 3 days to hatch. The young caterpillar eats its
+                            way out of the mature egg,
                             and then proceeds to finish up the rest of the egg shell.</span>
                         <div class="stage-01"></div>
                     </div>
 
                     <div class="stage middle">
                         <div class="stage-02-container">
-                            <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature
+                            <span class="stage-description">The egg takes 3 days to hatch. The young caterpillar eats
+                                its way out of the mature
                                 egg, and then proceeds to finish up the rest of the egg shell.</span>
                             <div class="stage-02"></div>
                         </div>
                         <div class="stage-03-container">
                             <div class="stage-03"></div>
-                            <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature
+                            <span class="stage-description">The egg takes 3 days to hatch. The young caterpillar eats
+                                its way out of the mature
                                 egg, and then proceeds to finish up the rest of the egg shell.</span>
                         </div>
                     </div>
 
                     <div class="stage bottom">
                         <div class="stage-04"></div>
-                        <span>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg,
+                        <span class="stage-description">The egg takes 3 days to hatch. The young caterpillar eats its
+                            way out of the mature egg,
                             and then proceeds to finish up the rest of the egg shell.</span>
                     </div>
                 </div>
@@ -126,11 +130,8 @@
                             </ul>
                         </div>
                         <div class="video flex">
-
-                            <video width="380vw" height="250vw" controls="controls" />
-                            <source src="https://www.youtube.com/watch?v=o8KCGW1Fcms" type="video/mp4">
-                            </video>
-                        
+                            <iframe id="video" src="https://www.youtube.com/embed/o8KCGW1Fcms" allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="step"></div>
                         <div class="butterfly">
@@ -155,7 +156,8 @@
                             <p>The egg takes 3 days to hatch. The young caterpillar eats its way out of the mature egg,
                                 and then proceeds to finish up the rest of the egg shell.</p>
                         </div>
-                        <button class="buy">Buy</button>
+                        <button class="buy"><a target="_blank"
+                                href="https://www.freecodecamp.com/email-submit">Buy</a></button>
                     </div>
                     <!-- Species 02 -->
                     <div class="species flex-column">
@@ -172,11 +174,8 @@
                             </ul>
                         </div>
                         <div class="video flex">
-
-                            <video width="380vw" height="250vw" controls="controls" />
-                            <source src="https://www.youtube.com/watch?v=o8KCGW1Fcms" type="video/mp4">
-                            </video>
-                        
+                            <iframe src="https://www.youtube.com/embed/uqLUr3WlpMI" allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="step"></div>
                         <div class="butterfly">
@@ -203,7 +202,8 @@
                             <p>The egg takes about 2.5-3 days to hatch. The newly hatched eats the empty egg shell for
                                 its first meal, and then moves on to eat the leaf lamina.</p>
                         </div>
-                        <button class="buy">Buy</button>
+                        <button class="buy"><a target="_blank"
+                                href="https://www.freecodecamp.com/email-submit">Buy</a></button>
                     </div>
                     <!-- Species 03 -->
                     <div class="species flex-column">
@@ -220,11 +220,8 @@
                             </ul>
                         </div>
                         <div class="video flex">
-
-                            <video width="380vw" height="250vw" controls="controls">
-                            <source src="https://www.youtube.com/watch?v=o8KCGW1Fcms" type="video/mp4">
-                            </video>
-                        
+                            <iframe src="https://www.youtube.com/embed/z4YaORvL8T8" allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="step"></div>
                         <div class="butterfly">
@@ -250,7 +247,8 @@
                             <p>Each egg takes about 5-6 days to hatch. The infant caterpillar nibbles away a small
                                 portion of the egg shell and pushes its way through the crack.</p>
                         </div>
-                        <button class="buy">Buy</button>
+                        <button class="buy"><a target="_blank"
+                                href="https://www.freecodecamp.com/email-submit">Buy</a></button>
                     </div>
                 </div>
             </div>
